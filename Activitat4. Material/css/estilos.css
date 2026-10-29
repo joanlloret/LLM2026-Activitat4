@@ -1,0 +1,274 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #333333;
+    background-color: #3c8b28; /* Verd base uniforme */
+}
+
+header.capcalera {
+    background-color: #3c8b28;
+    padding: 10px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-header img {
+    height: 65px;
+    display: block;
+}
+
+nav.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+nav.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav.menu a:hover,
+nav.menu a.actiu {
+    text-decoration: underline;
+}
+
+main.index-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-index {
+    background-image: url('../img/casa_encantada.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: calc(100vh - 180px);
+    min-height: 520px;
+    padding: 40px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.titol-portada {
+    color: #ff0000;
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.subtitol-portada {
+    color: #ff0000;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+main.zona-central {
+    background-color: #eef0f2; /* Fons gris clar central */
+    width: 100%;
+    padding: 30px 40px 60px 40px;
+    min-height: calc(100vh - 180px);
+    display: flex;
+    justify-content: center;
+}
+
+h1.titol-seccio {
+    font-size: 36px;
+    font-weight: normal;
+    margin-bottom: 30px;
+    color: #000000;
+}
+
+h1.titol-seccio .blau {
+    color: #0000ff;
+    font-weight: bold;
+}
+
+.contenedor-precios {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.contenidor-taula {
+    border: 2px solid #7f93a4;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+table.taula-preus {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.taula-preus th {
+    background: linear-gradient(to bottom, #50687f, #3a4e63);
+    color: #ffffff;
+    padding: 16px 15px;
+    font-size: 16px;
+    font-weight: normal;
+    border-right: 1px solid #ffffff;
+}
+
+table.taula-preus th:last-child {
+    border-right: none;
+}
+
+table.taula-preus td {
+    padding: 18px 15px;
+    text-align: center;
+    border-bottom: 1px solid #e1e1e1;
+    border-right: 1px solid #e1e1e1;
+    vertical-align: middle;
+    font-size: 15px;
+    color: #333333;
+}
+
+table.taula-preus td:last-child {
+    border-right: none;
+}
+
+table.taula-preus td.nom-hab {
+    font-weight: bold;
+    color: #111111;
+}
+
+table.taula-preus img.icona-persona {
+    height: 28px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 2px;
+}
+
+.caracteristiques-comuns {
+    background: linear-gradient(to bottom, #50687f, #3a4e63);
+    color: #ffffff;
+    text-align: center;
+    padding: 14px;
+    font-style: italic;
+    font-size: 15px;
+}
+
+.contenedor-reserva {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+form.formulari-reserva fieldset {
+    border: 2px solid #7f93a4;
+    background-color: #ffffff;
+    padding: 25px 30px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.06);
+}
+
+form.formulari-reserva legend {
+    font-weight: bold;
+    color: #3c8b28;
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+.camp-form {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.camp-form label {
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #222222;
+}
+
+.camp-form input,
+.camp-form select,
+.camp-form textarea {
+    padding: 10px 12px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #fafafa;
+}
+
+.camp-form input:focus,
+.camp-form select:focus,
+.camp-form textarea:focus {
+    outline: none;
+    border-color: #3c8b28;
+    background-color: #ffffff;
+}
+
+.camp-inline {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.camp-inline label {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+small.nota {
+    color: #666666;
+    font-style: italic;
+    font-size: 12px;
+    display: block;
+    margin-top: 4px;
+}
+
+.boto-enviar {
+    background-color: #3c8b28;
+    color: #ffffff;
+    padding: 14px 28px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+    display: block;
+    margin: 10px 0 20px 0;
+}
+
+.boto-enviar:hover {
+    background-color: #2e691d;
+}
+
+footer.peu {
+    background-color: #3c8b28;
+    color: #1a3c10;
+    padding: 20px 60px;
+    font-size: 13px;
+}
+
+footer.peu p {
+    margin-bottom: 6px;
+}
+
+footer.peu a {
+    color: #ffffff;
+}
+
+footer.peu img.logo-cc {
+    height: 24px;
+    vertical-align: middle;
+    margin-left: 5px;
+}

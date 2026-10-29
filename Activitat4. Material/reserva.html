@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Terror - Reserva</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <!-- Encabezado verde -->
+    <header class="capcalera">
+        <div class="logo-header">
+            <a href="index.html">
+                <img src="img/estrelles.jpg" alt="Logo Hotel Terror">
+            </a>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="preus.html">Precios</a></li>
+                <li><a href="reserva.html" class="actiu">Reserva</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Zona central con fondo gris claro y márgenes -->
+    <main class="zona-central">
+        <div class="contenedor-reserva">
+            <h1 class="titol-seccio"><span class=>Reserve su habitación en</span> Hotel Terror</h1>
+
+            <form action="#" method="post" class="formulari-reserva">
+                
+                <!-- Datos personales -->
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    
+                    <div class="camp-form">
+                        <label for="tratamiento">Tratamiento:</label>
+                        <select id="tratamiento" name="tratamiento" required>
+                            <option value="">-- Seleccionar --</option>
+                            <option value="Sr">Sr</option>
+                            <option value="Sra">Sra</option>
+                            <option value="Srta">Srta</option>
+                        </select>
+                    </div>
+
+                    <div class="camp-form">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+
+                    <div class="camp-form">
+                        <label for="apellidos">Apellidos:</label>
+                        <input type="text" id="apellidos" name="apellidos" required>
+                    </div>
+
+                    <div class="camp-form">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                    </div>
+
+                    <div class="camp-form">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="camp-form">
+                        <label for="email_conf">Confirmar correo electrónico:</label>
+                        <input type="email" id="email_conf" name="email_conf" required>
+                    </div>
+
+                    <div class="camp-form">
+                        <label for="password">Contraseña:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                </fieldset>
+
+                <!-- Datos de la reserva -->
+                <fieldset>
+                    <legend>Datos de la reserva</legend>
+
+                    <div class="camp-form">
+                        <label for="tipo_habitacion">Tipo de habitación:</label>
+                        <select id="tipo_habitacion" name="tipo_habitacion" required>
+                            <option value="">-- Selecciona tipo --</option>
+                            <option value="individual">Habitación individual</option>
+                            <option value="doble">Habitación doble</option>
+                            <option value="doble_superior">Habitación doble superior</option>
+                            <option value="triple">Habitación triple</option>
+                        </select>
+                    </div>
+
+                    <div class="camp-form">
+                        <label for="personas">Número de personas:</label>
+                        <input type="number" id="personas" name="personas" min="1" max="10" value="1" required>
+                    </div>
+
+                    <div class="camp-form">
+                        <label for="fecha_entrada">Fecha de entrada:</label>
+                        <input type="date" id="fecha_entrada" name="fecha_entrada" required>
+                    </div>
+
+                    <div class="camp-form">
+                        <label for="fecha_salida">Fecha de salida:</label>
+                        <input type="date" id="fecha_salida" name="fecha_salida" required>
+                    </div>
+
+                    <div class="camp-form">
+                        <label for="peticiones">Peticiones especiales:</label>
+                        <textarea id="peticiones" name="peticiones" rows="3"></textarea>
+                        <small class="nota">* Las peticiones no se garantizan pero se intentarán satisfacer.</small>
+                    </div>
+                </fieldset>
+
+                <!-- Datos adicionales -->
+                <fieldset>
+                    <legend>Datos adicionales</legend>
+
+                    <div class="camp-inline">
+                        <input type="checkbox" id="parking" name="parking" value="si">
+                        <label for="parking">Parking cubierto (8€/noche)</label>
+                    </div>
+                    <small class="nota">* El hotel dispone de parking exterior gratuito.</small>
+
+                    <div class="camp-form" style="margin-top: 15px;">
+                        <label for="hora_llegada">Hora prevista de llegada:</label>
+                        <input type="time" id="hora_llegada" name="hora_llegada">
+                    </div>
+
+                    <div class="camp-inline" style="margin-top: 15px;">
+                        <input type="checkbox" id="desayuno" name="desayuno" value="si">
+                        <label for="desayuno">Añadir desayuno (5€/día por persona)</label>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="boto-enviar">Enviar Reserva</button>
+
+            </form>
+        </div>
+    </main>
+
+    <!-- Pie verde -->
+    <footer class="peu">
+        <p>Actividad realizada por <strong>Nombre y apellidos del estudiante</strong></p>
+        <p>Fotografías de la portada <a href="https://unsplash.com/" target="_blank">Unsplash</a> 
+            <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
+                <img src="img/creative-commons.png" alt="Creative Commons" class="logo-cc">
+            </a>
+        </p>
+    </footer>
+
+</body>
+</html>
