@@ -8,7 +8,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     color: #333333;
-    background-color: #3c8b28; /* Verd base uniforme */
+    background-color: #3c8b28;
 }
 
 header.capcalera {
@@ -75,7 +75,7 @@ main.index-container {
 }
 
 main.zona-central {
-    background-color: #eef0f2; /* Fons gris clar central */
+    background-color: #eef0f2;
     width: 100%;
     padding: 30px 40px 60px 40px;
     min-height: calc(100vh - 180px);
